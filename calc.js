@@ -14,9 +14,17 @@ class Calc{
    }
 }
 function onCllick(){
-const numm1 = document.getElementById("numm1").value;
-const num2 =document.getElementById("num2").value;
-const Results = new Calc( numm1, num2)
+const num1 = document.getElementById("numm1").value;
+const numm2 =document.getElementById("num2").value;
+const result = document.getElementById("results").value;
+
+let results = "operation";
+switch(result) {
+   case "add": results = num1 +numm2; break;
+   case "subtract": results = num1 - numm2; break;
+   case "product": results = num1 * numm2; break;
+}
+
 } 
 
 
