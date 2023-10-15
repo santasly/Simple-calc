@@ -1,33 +1,35 @@
-class Calc{
-     numbers(numm1 , num2) {
-        // numm1 =10;
-        // num2 = 20;  
-    }
-    add(){
-    return numm1 + num2;
-   }
-    subtract(){
-   return num2 - numm1;
-   }
-    multiply(){
-   return num2*numm1 ;
-   }
-}
-function onCllick(){
-const num1 = document.getElementById("numm1").value;
-const numm2 =document.getElementById("num2").value;
-const result = document.getElementById("results").value;
-
-let results = "operation";
-switch(result) {
-   case "add": results = num1 +numm2; break;
-   case "subtract": results = num1 - numm2; break;
-   case "product": results = num1 * numm2; break;
-}
-
-} 
+let number1=document.getElementById("num1");
+let number2=document.getElementById("num2");
+let result= document.getElementById("results");
 
 
-console.log ( 'The sum is: ', Calculator.add());
-console.log ( 'The difference is: ', Calculator.subtract());
-console.log ( 'The product is: ', Calculator.multiply());
+document.getElementById("addition-btn").addEventListener("click", function(){
+   result.value=parseInt(number1.value)+parseInt(number2.value);
+   // number1.value;
+   // number1=Number(number1);
+   // number2=document.getElementById("num2").value;
+   // number2=Number(number2);
+   // result= number1+number2;
+   // document.getElementById("results").innerHTML=result;
+
+});
+document.getElementById("subtraction-btn").addEventListener("click",function(){
+   result.value=parseInt(number1.value)-parseInt(number2.value);
+   // number1=document.getElementById("num1").value;
+   // number1=Number(number1);
+   // number2=document.getElementById("num2").value;
+   // number2=Number(number2);
+   // result= number1-number2;
+   // document.getElementById("results").innerHTML=result;
+
+});
+ document.getElementById("multiplication-btn").addEventListener("click", function(){
+   result.value=parseInt(number1.value)* parseInt(number2.value);
+   // number1=document.getElementById("num1").value;
+   // number1=Number(number1);
+   // number2=document.getElementById("num2").value;
+   // number2=Number(number2);
+   // result= number1*number2;
+   // document.getElementById("results").innerHTML=result;
+
+});

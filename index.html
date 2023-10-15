@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css">
 </head>
 <body>
+   <div class="main">
+    <div class="head">
     <h1>My simple Calculator</h1>
     <label for="numm1">Number 1:</label>
-    <input type="text" id="numm1"><br>
+    <input type="number" id="num1"><br><br>
     <label for="num2"> Number 2:</label>
-    <input type="text" id="num2"><br>
+    <input type="number" id="num2"><br><br><br>
 
-    <button id="results">Add</button>
-    <button id ="results">Subtract</button>
-    <button id="results">Multiply</button>
+    </div> 
+    <div class="btns">
+    <button id="addition-btn">Add</button>
+    <button id ="subtraction-btn">Subtract</button>
+    <button id="multiplication-btn">Multiply</button><br><br><br>
 
-
-
+     <input type="number" readonly id="results">
+    </div> 
     <script src="calc.js"></script> 
-
+</div> 
 </body>
 </html>
